@@ -1,0 +1,65 @@
+h2, li, h1, footer {
+    text-transform: uppercase;
+}
+
+h1 {
+    background-color: #A0A0A0;
+    letter-spacing: 0.3em;
+    font-size: 30px;
+    padding: 1%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #1C62BC; 
+    background-color: #BFBCBC;   
+}
+
+main {
+    margin: auto;
+    width: 60%;
+}
+
+section {
+    margin: 5%
+}
+
+h2 {
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: #760B30;
+    background-color: #A0A0A0;
+    width: 100%;
+}
+
+b {
+    font-style: italic;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C62BC;
+    margin: 0px;
+    display: flex;
+    color: white;
+}
+
+.batman {
+    width: 100px;
+}
+
+.icono {
+    width: 20px;
+    padding: 0px;
+}
