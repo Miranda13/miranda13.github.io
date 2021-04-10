@@ -96,7 +96,7 @@ p {
 }
 
 .batman {
-    background-image: url('../img/bg-batman.jpg');
+    background-image: url('../img/superHero/bg-batman.jpg');
 }
 
 .batman, .superman, .mujerMaravilla {
@@ -105,11 +105,11 @@ p {
 }
 
 .superman {
-    background-image: url('../img/bg-superman.jpg');
+    background-image: url('../img/superHero/bg-superman.jpg');
 }
 
 .mujerMaravilla {
-    background-image: url('../img/bg-wonderw.jpg');
+    background-image: url('../img/superHero/bg-wonderw.jpg');
 }
 
 .foto {
@@ -119,15 +119,15 @@ p {
 }
 
 .fotoMaravilla {
-    background-image: url('../img/wonderw.jpg');
+    background-image: url('../img/superHero/wonderw.jpg');
 }
 
 .fotoSuperman {
-    background-image: url('../img/superman.jpg');
+    background-image: url('../img/superHero/superman.jpg');
 }
 
 .fotoBatman {
-    background-image: url('../img/batman.jpg');
+    background-image: url('../img/superHero/batman.jpg');
 }
 
 svg {
@@ -140,7 +140,7 @@ svg {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
-    margin-top: -35%;
+    margin-top: -45%;
 }
 
 footer {
