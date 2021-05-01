@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -36,6 +38,72 @@ aside {
     padding: 2px 0px 2px 25px;
 }
 
+form>div {
+    display: flex;
+}
+
+input, select, textarea  {
+    width: 90%;
+    height: 4rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin: 5% 0px;
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 15.3407px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+}
+
+#file {
+    padding: 5% 0px;
+    font-size: 0.95rem;
+    background: none;
+    border-radius: none;
+    border: none;
+    color: black;
+}
+
+form>input {
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    width: 60%;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #000000;
+    margin-left: 20%;
+    padding: 0px;
+}
+
+hr {
+    margin: 5%;
+}
+
+article>div>input {
+    margin: 2% 0px;
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+article>div>label {
+    margin-left: 3%;
+}
+
+article>div{
+    margin-top: 2%;
+}
+
+textarea {
+    height: 20rem;
+}
+
 header {
     display: flex;
     width: 100%;
@@ -59,18 +127,17 @@ main{
 }
 
 section {
-    width: 100%;
-    display: inline-block;
+    width: 90%;
     justify-content: center;
+    padding: 2% 6%;
+    background: #00669F;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    margin: auto;
 }
 
 article {
-    border-radius: 16px 16px 0px 0px;
-    width: 300px;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 5%;
-    padding-bottom: 20px;
+    width: 50%;
 }
 
 .cabecera {
@@ -79,62 +146,35 @@ article {
     height: 200px;
 }
 
-svg {
-    width: 30px;
-    margin: 10px;
-    color: #CC2424;;
-}
-
-.fondo-batman {
-    background-image: url('../img/superHero/bg-batman.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.foto-batman {
-    background-image: url('../img/superHero/batman.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondo-harley {
-    background-image: url('../img/superHero/bg-harley.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.foto-harley {
-    background-image: url('../img/superHero/harley.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fondo-superman {
-    background-image: url('../img/superHero/bg-superman.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.foto-superman {
-    background-image: url('../img/superHero/superman.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-h3 {
-    font-size: 25px;
-    line-height: 25px;
+h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
     text-align: center;
-    margin-top: 25%;
+    color: #FBFFFD;
+    margin: 2%;
 }
 
-.foto {
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    border-radius: 50%;
+p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    margin: 2% 5%;
+    color: #FFFFFF
+}
+
+label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
 }
 
 h1 {
@@ -144,15 +184,6 @@ h1 {
     line-height: 62px;
     color: #333333;
     margin: 0px 0px 20px 0px;
-}
-
-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height, or 130% */
-    padding: 15px;
 }
 
 .button {
@@ -165,12 +196,6 @@ p {
     line-height: 18px;
     padding: 15px;
     margin: auto;
-}
-
-.add {
-    position: fixed;
-    top: 50%;
-    right: 0px;
 }
 
 a {

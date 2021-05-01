@@ -26,34 +26,55 @@
         <section>
             <h2> Añadí tu super!</h2>
             <p> Agregá tu personaje favorito completando las opciones. </p>
-            <form action="">
-                <article>
-                    <label for="name">
-                        Nombre
-                    </label>
-                    <input id="name" name="name" type="text" required>
-                    <label for="date">
-                        Fecha
-                    </label>
-                    <input id="date" name="date" type="date">
-                    <textarea name="description" id="description" rows="10">
-                    </textarea>
-                </article>
-                <article>
-                    <label for="specialty"> Especie </label>
-                <select name="specialty" id="specialty">
-                    <option disabled hidden selected> Elegir... </option>
-                    <option value="Millonario"> Millonario </option>
-                    <option value="Alien"> Alienígena</option>
-                    <option value="Cyborg"> Cyborg </option>
-                </select>
-                <label for="files"> Agregar foto </label>
-                <input name="file" id="file" type="file">
-                </article>
+            <form action="#">
+                <div>
+                    <article>
+                        <label for="name">
+                            Nombre
+                        </label> <br>
+                        <input id="name" name="name" type="text" required> <br>
+                        <label for="date">
+                            Fecha
+                        </label> <br>
+                        <input id="date" name="date" type="date" required> <br>
+                        <textarea name="description" id="description" rows="20" placeholder="Descripción" required></textarea>
+                    </article>
+                    <article>
+                        <label for="specialty"> Especie </label> <br>
+                        <select name="specialty" id="specialty" required>
+                            <option disabled hidden selected> Elegir... </option>
+                            <optgroup label="Dinero">
+                                <option value="Millonario"> Millonario </option>
+                            </optgroup>
+                            <optgroup label="Procedencia">
+                                <option value="Alien"> Alienígena</option>
+                                <option value="Colombiano"> Colombiano </option>
+                                <option value="Argentino"> Argentino </option>
+                            </optgroup>
+                            <optgroup label="Robotinos">
+                                <option value="Cyborg"> Cyborg </option>
+                            </optgroup>
+                        </select> <br>
+                        <label for="file"> Agregar foto </label> <br>
+                        <input name="file" id="file" type="file" accept="image/*" required> <br>
+                        <label> Poderes </label>
+                        <div>
+                            <input id="volar" type="checkbox"> <label for="volar"> Volar </label> <br>
+                            <input id="inteligencia" type="checkbox"> <label for="inteligencia"> Super inteligencia </label> <br>
+                            <input id="rayo" type="checkbox"> <label for="rayo"> Vista de rayo láser </label> <br>
+                            <input id="billetera" type="checkbox"> <label for="billetera"> Billetera gorda </label> <br>
+                        </div>
+                        <hr>
+                        <label> Tipo de personaje </label>
+                        <div class="poderes">
+                            <input id="heroe" type="radio" name="personaje"> <label for="heroe"> Héroe / Heroína </label> <br>
+                            <input id="villano" type="radio" name="personaje"> <label for="villano"> Víllano / Víllana </label> <br>
+                        </div>
+                    </article>
+                </div>
+                <input type="submit" value="Añadir">
             </form>
-            <div class="button">
-                Añadir
-            </div>
+            
         </section>
     </main>
     <footer>

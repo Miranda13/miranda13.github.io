@@ -172,6 +172,14 @@ p {
     position: fixed;
     top: 50%;
     right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00669F;
+}
+
+.fa-plus {
+    color: white;
 }
 
 a {
