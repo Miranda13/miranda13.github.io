@@ -78,12 +78,49 @@ article {
     border-radius: 16px 16px 0px 0px;
     width: 100%;
     height: 200px;
+    transition: ease-out 300ms;
+}
+
+.cabecera:hover {
+    transform: scale(1.2);
+    border-radius: 16px 16px 16px 16px;
+    transition: ease-in 300ms;
+}
+
+.foto:hover {
+    transform: rotate(90deg);
+    transition: ease-in 500ms;
+}
+
+nav ul li::before {
+    content: "\0261b";
+    visibility: hidden;
+    font-size: 20px;
+    color: darkorange;
+}
+
+nav ul li:hover::before {
+    visibility: visible;
+}
+
+nav ul li a:hover {
+    color: darkorange;
 }
 
 svg {
     width: 30px;
     margin: 10px;
-    color: #CC2424;;
+    color: #CC2424;
+    animation: latido 800ms linear infinite ;
+}
+
+@keyframes latido {
+    0%{
+        transform: scale3d(2, 2, 0.2);
+    }
+    100%{
+        transform: scale3d(1, 1, 0.1);
+    }
 }
 
 .fondo-batman {
@@ -136,6 +173,7 @@ h3 {
     top: 25%;
     left: 30%;
     border-radius: 50%;
+    transition: ease-out 500ms;
 }
 
 h1 {
@@ -156,6 +194,10 @@ p {
     padding: 15px;
 }
 
+p::selection {
+    background-color: darkorchid;
+}
+
 .button {
     width: 128.78px;
     height: 48.52px;
@@ -166,6 +208,15 @@ p {
     line-height: 18px;
     padding: 15px;
     margin: auto;
+    transition: ease-out 300ms;
+}
+
+.button:hover {
+    background: darkorange;
+    transform: scale(1.2);
+    border-radius: 5%;
+    border: 2px solid black;
+    transition: ease-in 300ms;
 }
 
 .add {
