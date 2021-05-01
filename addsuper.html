@@ -29,18 +29,14 @@
             <form action="#">
                 <div>
                     <article>
-                        <label for="name">
-                            Nombre
-                        </label> <br>
+                        <label for="name">Nombre</label> <br>
                         <input id="name" name="name" type="text" minlength="3" pattern=".{3,}" oninvalid="alert('El nombre del heroe debe tener al menos 3 caracteres');" required> <br>
-                        <label for="date">
-                            Fecha
-                        </label> <br>
+                        <label for="date">Fecha</label> <br>
                         <input id="date" name="date" type="date" required oninvalid="setCustomValidity('Ingresa una fecha, es obligatorio');"> <br>
                         <textarea minlength="5" pattern=".{5,}" oninvalid="alert('La descripcion del heroe debe tener al menos 5 caracteres');" name="description" id="description" rows="20" placeholder="Descripción" required></textarea>
                     </article>
                     <article>
-                        <label for="specialty"> Especie </label> <br>
+                        <label for="specialty">Especie</label> <br>
                         <select name="specialty" id="specialty" required>
                             <option disabled hidden selected> Elegir... </option>
                             <optgroup label="Dinero">

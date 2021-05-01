@@ -42,7 +42,7 @@ form>div {
     display: flex;
 }
 
-input, select, textarea  {
+input[type=text], input[type=date], select, textarea  {
     width: 90%;
     height: 4rem;
     font-family: Inter;
@@ -55,6 +55,10 @@ input, select, textarea  {
     color: rgba(0, 0, 0, 0.5);
     border-radius: 15.3407px;
     border: 1.53407px solid rgba(0, 0, 0, 0.1);
+}
+
+input[type=file] {
+    margin: 5% 0px;
 }
 
 #file {
@@ -195,7 +199,7 @@ h1 {
     font-size: 15px;
     line-height: 18px;
     padding: 15px;
-    margin: auto;
+    margin: 10% auto;
 }
 
 a {
@@ -207,6 +211,19 @@ nav {
     background: #001D2D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0px;
+}
+
+input:required + label::before {
+    content: "*";
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background: #001D2D;
+    color: white;
+    cursor: pointer;
 }
 
 ul {
