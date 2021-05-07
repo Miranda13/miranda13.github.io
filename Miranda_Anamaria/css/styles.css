@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --colorSecundario: black;
+    --colorPrincipal: #F0A83E;
+    --colorTerciaro: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilos del footer */
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--colorSecundario);
+    height: 1.5rem;
+}
+
+/* Estilos del aside */
+aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    height: 1.5rem;
+    background-color: var(--colorSecundario);
+}
+
+aside p {
+    font-size: 1rem;
+    padding: 0px 3%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: var(--colorPrincipal);
+}
+
+.logos span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 0px  3%;
+}
+
+.logos img {
+    width: 1.5rem;
+    height: 1.5rem;
+}   
+
+#nombre {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    transition: ease-out 300ms;
+}
+
+nav ul a :hover {
+    color: brown;
+    transition: ease-in 300ms;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.compras {
+    font-size: 1.5rem;
+    margin: 0px  3%;
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width: 100%;
+    height: 80vh;
+}
+
+main h2 {
+    background-color: var(--colorTerciaro);
+    width: 30vw;
+    border-radius: 5px;
+    height: 3.5rem;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    color: black;
+}
+
+main p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: white;
+    width: 20vw;
+    align-self: flex-end;
+}
+
+main button {
+    background-color: var(--colorPrincipal);
+    border-radius: 5px;
+    width: 15vw;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: white;
+    align-self: flex-end;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3%;
+    align-content: flex-end;
+}
+
+form select {
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+form {
+    margin-right: 3%;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+main>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3%;
+    justify-content: center;
+} */
+
+@media (max-width: 1280px){
+    main h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 720px){
+    header nav ul {
+        display: none;
+    }
+
+    .compras {
+        display: none;
+    }
+    
+    header nav::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 1.5rem;
+        content: "\f0c9";
+        color: white;
+        padding-right: 1.5rem;
+    }
+
+    main {
+        align-content: center;
+    }
+
+    main p, main button {
+        align-self: center;
+    }
+
+    main p {
+        width: 30vw;
+    }
+
+    main button {
+        width: 20vw;
+    }
+
+    main h2 {
+        width: 70vw;
+    }
+}
